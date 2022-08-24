@@ -1,0 +1,56 @@
+[
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "name": "Война и мир",
+      "author": "Л.Н. Толстой",
+      "pub_date": "2018-02-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "name": "1984",
+      "author": "Джордж Оруэл",
+      "pub_date": "2016-12-06"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "Десять негритят",
+      "author": "Агата Кристи",
+      "pub_date": "2017-07-11"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "На маяк",
+      "author": "Вирджиния Вулф",
+      "pub_date": "2018-10-20"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Доводы рассудка",
+      "author": "Джейн Остин",
+      "pub_date": "2016-05-03"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "name": "Джен Эйр",
+      "author": "Шарлотта Бронте",
+      "pub_date": "2016-05-03"
+    }
+  }
+]

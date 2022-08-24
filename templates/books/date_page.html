@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Книги за {{ current_page }}{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="header">
+            <h1><a href="#">Книги за {{ current_page }}</a></h1>
+        </div>
+        <div><a href="{% url 'books' %}">В каталог</a></div><br/><br/>
+        {% for book in books %}
+        <div class="row">
+            <div class="book col-md-4">
+                <h2>{{ book.name }}</h2>
+                <p>Автор: {{ book.author }}</p>
+                <p>Дата публикации: <a href="{% url 'books' %}{{ book.pub_date }}">{{ book.pub_date }}</a></p>
+            </div>
+        </div>
+        {% endfor %}
+
+
+        <a class="button button-primary" href="{% url 'books' %}{{ previous_page }}">⟵ </a>
+
+        <a class="button disabled" href="{% url 'books' %}{{ current_page }}">{{ current_page }}</a>
+
+        <a class="button button-primary" href="{% url 'books' %}{{ next_page }}"> ⟶</a>
+
+    </div>
+{% endblock %}
